@@ -471,11 +471,32 @@ small {
 	padding: 4rem 1rem;
 }
 
-.my-skills ul {
+.skills-grid {
 	padding-block-start: 5rem;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 3.2rem 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	gap: 3rem;
+}
+
+.skill-group h3 {
+	font-size: 1.6rem;
+	color: var(--accent-clr);
+	margin-block-end: 1.6rem;
+}
+
+.skill-group ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.skill-group li {
+	padding: 0.35rem 0.8rem;
+	background: var(--secondary-clr);
+	border: 1px solid hsl(0, 0%, 22%);
+	border-radius: 2px;
+	color: var(--main-clr);
+	font-size: 1.3rem;
 }
 
 /*******************
@@ -841,8 +862,8 @@ small {
 		display: none;
 	}
 
-	.my-skills ul {
-		grid-template-columns: repeat(2, 1fr);
+	.skills-grid {
+		grid-template-columns: 1fr;
 	}
 
 	.project:nth-child(even) img {
