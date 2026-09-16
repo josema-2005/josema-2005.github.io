@@ -1,382 +1,424 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description"
-		content="I'm José María Guerrero Gámez, a 20-year-old freelance web developer with front-end and back-end experience, helping companies create, improve, and maintain effective websites." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="José María Guerrero Gámez — Full Stack Developer. I build fast, scalable web applications with clean architecture and sharp interfaces." />
+  <meta property="og:title" content="José María Guerrero Gámez — Full Stack Developer" />
+  <meta property="og:description" content="Full Stack Developer — React, Next.js, Node.js, Laravel, PHP. Available for freelance and full-time opportunities." />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#FAFAF6" />
+  <meta name="robots" content="index, follow" />
 
-	<meta name="description" content="Page description" />
-	<meta property="og:title" content="José María Guerero Gámez - Web Developer" />
-	<meta property="og:description"
-		content="José María is a 20-year-old freelance web developer with front-end and back-end experience, helping companies build and improve their online presence." />
-	<meta property="og:image" content="" />
-	<meta property="og:image:alt" content="Williams Samuel" />
-	<meta property="og:locale" content="en_GB" />
-	<meta property="og:type" content="website" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="theme-color" content="#000000" />
-	<meta name="robots" content="index, follow" />
-
-	<link rel="icon" href="./assets/programador.png" />
-	<link rel="stylesheet" href="styles.css" />
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-	<!-- boxicons -->
-	<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-	<script src="./script.js" defer></script>
-	<title>Jose Maria - Web Developer</title>
+  <link rel="icon" href="./assets/programador.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>José María — Full Stack Developer</title>
 </head>
-
 <body>
-	<!-- only for keyboard users -->
-	<a class="skip-to-content" href="#main-content">Skip to content</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-	<header class="main-header">
-		<nav class="nav slide-in-top">
-			<div class="container">
-				<a href="#">
-					<img src="./assets/programador.png" alt="jose" class="logo" />
-					<title>Logo</title>
-				</a>
+  <!-- Custom cursor (desktop only) -->
+  <div class="cursor" aria-hidden="true" id="cursor"></div>
+  <div class="cursor-dot" aria-hidden="true" id="cursorDot"></div>
 
-				<ul class="nav-list">
-					<li>
-						<a href="#about" class="nav-links hover-effect">About</a>
-					</li>
-					<li>
-						<a href="#skills" class="nav-links hover-effect">Skills</a>
-					</li>
-					<li>
-						<a href="#projects" class="nav-links hover-effect">Projects</a>
-					</li>
-					<li>
-						<a href="#contact" class="nav-links hover-effect">Contact</a>
-					</li>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#top" class="logo" aria-label="José María — Back to top">
+        <span class="logo-letters" aria-hidden="true">JM</span>
+      </a>
 
-				</ul>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="#about"    class="nav-link" data-text="About">About</a></li>
+          <li><a href="#stack"    class="nav-link" data-text="Stack">Stack</a></li>
+          <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+          <li><a href="#contact"  class="nav-link" data-text="Contact">Contact</a></li>
+        </ul>
+      </nav>
 
-				<ul class="social-nav">
-					<li>
-						<a href="https://www.linkedin.com/in/jose-maria-guerrero-g%C3%A1mez-034ab2345/" rel="noreferrer"
-							target="_blank" aria-label="link to linkedin profile"><svg
-								xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-								style="fill: currentColor">
-								<circle cx="4.983" cy="5.009" r="2.188"></circle>
-								<path
-									d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z">
-								</path>
-							</svg>
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/josema-2005" rel="noreferrer" target="_blank"
-							aria-label="link to github account"><svg xmlns="http://www.w3.org/2000/svg" width="18"
-								height="18" viewBox="0 0 24 24" style="fill: currentColor">
-								<path fill-rule="evenodd" clip-rule="evenodd"
-									d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
-								</path>
-							</svg>
-						</a>
-					</li>
-				</ul>
+      <div class="header-actions">
+        <a href="https://github.com/josema-2005" target="_blank" rel="noreferrer noopener"
+           aria-label="GitHub profile" class="icon-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jose-maria-guerrero-g%C3%A1mez-034ab2345/" target="_blank" rel="noreferrer noopener"
+           aria-label="LinkedIn profile" class="icon-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <circle cx="4.983" cy="5.009" r="2.188"/>
+            <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"/>
+          </svg>
+        </a>
+        <a href="mailto:contacto@josemariadevs.com" class="header-cta">Let's talk</a>
+      </div>
 
-				<div class="hamburger">
-					<div class="line-menu half start"></div>
-					<div class="line-menu"></div>
-					<div class="line-menu half end"></div>
-				</div>
-			</div>
-		</nav>
-	</header>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="ham-line ham-top"></span>
+        <span class="ham-line ham-bottom"></span>
+      </button>
+    </div>
 
-	<main id="main-content">
-		<!-- hero section -->
-		<section class="hero">
-			<div class="container">
-				<article class="hero-text bounce-in-left">
-					<div>
-						<p class="subtitle">hi there , i'm</p>
-						<h1 class="name">José María Guerrero Gámez</h1>
-					</div>
-					<div>
-						<p class="intro">
-							I’m a freelance web developer who helps businesses create professional, easy-to-manage
-							websites. I work on both front-end and back-end development, turning ideas into clean,
-							functional, and reliable digital solutions.
-						</p>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+      <nav aria-label="Mobile navigation">
+        <ul class="mobile-nav-list" role="list">
+          <li style="--i:0"><a href="#about"    class="mobile-nav-link">About</a></li>
+          <li style="--i:1"><a href="#stack"    class="mobile-nav-link">Stack</a></li>
+          <li style="--i:2"><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li style="--i:3"><a href="#contact"  class="mobile-nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-footer">
+        <a href="https://github.com/josema-2005" target="_blank" rel="noreferrer noopener" class="mobile-social">GitHub</a>
+        <a href="https://www.linkedin.com/in/jose-maria-guerrero-g%C3%A1mez-034ab2345/" target="_blank" rel="noreferrer noopener" class="mobile-social">LinkedIn</a>
+        <a href="mailto:contacto@josemariadevs.com" class="mobile-social">Email</a>
+      </div>
+    </div>
+  </header>
 
-						<div class="hero-btn-container">
-							<a href="mailto:contacto@josemariadevs.com" class="btn hire-btn">
-								Hire Me
-							</a>
-							<!-- <a href="#" download="" class="btn download-link"
-									>Download CV</a
-								> -->
-						</div>
-					</div>
-				</article>
-				<img src="./assets/coding-ground.png" alt="coding desk" class="fade-in code" />
-			</div>
-		</section>
+  <main id="main-content">
 
-		<!-- about section -->
-		<section class="about-me" id="about">
-			<div class="container" data-aos="fade-up">
-				<img src="./assets/fotomia.png" alt="Jose Maria" />
-				<article>
-					<p class="subtitle">Who is Jose Maria?</p>
-					<h2 class="title">A Bit About Me</h2>
-					<div class="about">
-						<p>
-							I’m a 20-year-old freelance web developer with experience in both front-end and back-end
-							development. I help businesses create, improve, and manage professional websites that look
-							good, work smoothly, and are built around their real goals.
-						</p>
-						<p>
-							I enjoy turning ideas into complete digital solutions, from building websites from scratch to
-							updating content, improving structure, or polishing the user experience. Every project is
-							adapted to the client’s brand, audience, and needs.
-						</p>
-						<p>
-							My way of working is clear, close, and reliable. I focus on understanding what each business
-							needs, proposing practical solutions, and delivering websites that help them present
-							themselves online with confidence.
-						</p>
-						<p>
-							If you’re looking to create or improve your online presence, I’d be happy to talk about your
-							project and help bring it to life.
-						</p>
-					</div>
-				</article>
-			</div>
-		</section>
+    <!-- ===== HERO ===== -->
+    <section class="hero" aria-label="Introduction">
+      <!-- Decorative background elements -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="geo-arc"></div>
+        <div class="geo-grid"></div>
+        <div class="geo-dot geo-dot-1"></div>
+        <div class="geo-dot geo-dot-2"></div>
+        <div class="geo-line geo-line-1"></div>
+        <div class="geo-line geo-line-2"></div>
+      </div>
 
-		<!-- my skills -->
-		<section class="my-skills" id="skills" data-aos="fade-up">
-			<div class="container">
-				<article>
-					<p class="subtitle">My Skills</p>
-					<h2 class="title">Technologies I Know</h2>
+      <div class="hero-content">
+        <p class="hero-label reveal-item" style="--d:0s">
+          <span class="label-pulse" aria-hidden="true"></span>
+          <span>Full Stack Developer · Available for hire</span>
+        </p>
 
-					<p class="info">
-						During my higher education course, I completed various online courses, including <strong>PHP,
-							JavaScript, and others</strong>.
-					</p>
-				</article>
-				<div class="skills-grid">
-					<div class="skill-group">
-						<h3>Front-end</h3>
-						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>SASS</li>
-							<li>JavaScript</li>
-							<li>TypeScript</li>
-							<li>React Js</li>
-							<li>Next.js</li>
-							<li>Angular</li>
-							<li>Bootstrap</li>
-						</ul>
-					</div>
-					<div class="skill-group">
-						<h3>Back-end</h3>
-						<ul>
-							<li>PHP</li>
-							<li>Laravel</li>
-							<li>Node Js</li>
-							<li>Java</li>
-							<li>Python</li>
-						</ul>
-					</div>
-					<div class="skill-group">
-						<h3>Databases</h3>
-						<ul>
-							<li>MySQL</li>
-							<li>MongoDB</li>
-						</ul>
-					</div>
-					<div class="skill-group">
-						<h3>Tools & Platforms</h3>
-						<ul>
-							<li>Git</li>
-							<li>WordPress</li>
-							<li>SFCC</li>
-							<li>Figma</li>
-							<li>Adobe XD</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</section>
+        <h1 class="hero-name" aria-label="José María Guerrero Gámez">
+          <span class="name-word reveal-item" style="--d:0.1s" aria-hidden="true">José María</span>
+          <span class="name-word reveal-item" style="--d:0.2s" aria-hidden="true">Guerrero</span>
+          <span class="name-word reveal-item" style="--d:0.3s" aria-hidden="true">Gámez</span>
+        </h1>
 
-		<!-- projects section -->
-		<section class="projects-section" id="projects">
-			<div class="container">
-				<article data-aos="fade-up">
-					<p class="subtitle">My Projects</p>
-					<h2 class="title">Some Things I Built</h2>
-					<p class="info">
-						I enjoy building complete, functional applications. Here's one of my most solid full-stack
-						projects:
-					</p>
-				</article>
+        <div class="hero-lower">
+          <p class="hero-desc reveal-item" style="--d:0.45s">
+            I build fast, scalable web applications —<br class="br-desktop" />
+            clean architecture, sharp interfaces, and code<br class="br-desktop" />
+            that teams are happy to maintain.
+          </p>
+          <div class="hero-actions reveal-item" style="--d:0.6s">
+            <a href="#projects" class="btn-primary">View my work</a>
+            <a href="mailto:contacto@josemariadevs.com" class="btn-ghost">Say hello</a>
+          </div>
+        </div>
+      </div>
 
-				<section class="projects">
-					<!-- Mundo Animal -->
-					<article class="project">
-						<a href="https://github.com/josema-2005/tfg-josemaria" target="_blank" rel="noreferrer"
-							class="project-img">
-							<img src="./assets/mundoanimal1.PNG" alt="Mundo Animal screenshot" title="Mundo Animal" />
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-track"><div class="scroll-thumb"></div></div>
+        <span class="scroll-label">scroll</span>
+      </div>
+    </section>
 
-						</a>
-						<div>
-							<h3>01</h3>
-							<h2>Mundo Animal</h2>
-							<p>
-								Mundo Animal is a web platform developed as my Bachelor's Degree Final Project (TFG). It
-								manages a complete e-commerce for pet products, a blog with advice and news, a
-								veterinary appointment system, and a user profile section with full authentication.
-							</p>
-							<ul class="tech-stack">
-								<li>Laravel 10</li>
-								<li>PHP 8</li>
-								<li>MySQL (XAMPP)</li>
-								<li>Blade</li>
-								<li>CSS3</li>
-								<li>Vanilla JavaScript</li>
-							</ul>
-							<ul class="project-links">
-								<li>
-									<a href="https://github.com/josema-2005/tfg-josemaria" target="_blank"
-										rel="noreferrer" class="hover-effect">GitHub →</a>
-								</li>
-							</ul>
-						</div>
-					</article>
-				</section>
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="about-inner">
+        <div class="about-image-col">
+          <div class="about-photo-wrap reveal-item" style="--d:0s">
+            <img src="./assets/fotomia.png" alt="José María Guerrero Gámez" class="about-photo" loading="lazy" />
+            <div class="photo-frame-deco" aria-hidden="true"></div>
+            <div class="photo-badge" aria-hidden="true">
+              <span class="mono">Full Stack Dev</span>
+              <span>Open to work</span>
+            </div>
+          </div>
+        </div>
 
-				<br><br><br>
+        <div class="about-text-col">
+          <p class="section-label reveal-item" style="--d:0s">01 — About me</p>
+          <h2 class="about-heading reveal-item" id="about-heading" style="--d:0.1s">
+            Full Stack.<br>
+            <em>Product-minded.</em><br>
+            Detail-obsessed.
+          </h2>
 
-				<!-- Analizador Juridico IA-->
-				<article class="project">
-					<a href="https://github.com/josema-2005/analizador-juridico-ia" target="_blank" rel="noreferrer"
-						class="project-img">
-						<img src="./assets/analizador-juridico.PNG" alt="Legal Document Analyzer screenshot"
-							title="Legal Document Analyzer" />
-					</a>
-					<div>
-						<h3>02</h3>
-						<h2>Legal Document Analyzer</h2>
-						<p>
-							This application allows users to upload legal or administrative PDF documents and
-							receive
-							a clear, plain-language explanation powered by AI. Designed to help individuals,
-							freelancers,
-							and small businesses better understand complex documents.
-						</p>
-						<ul class="tech-stack">
-							<li>React + Vite</li>
-							<li>Node.js</li>
-							<li>Express</li>
-							<li>OpenRouter API</li>
-							<li>pdf-parse</li>
-							<li>Dark-themed CSS</li>
-						</ul>
-						<ul class="project-links">
-							<li>
-								<a href="https://github.com/josema-2005/analizador-juridico-ia" target="_blank"
-									rel="noreferrer" class="hover-effect">GitHub →</a>
-							</li>
-						</ul>
-					</div>
-				</article>
+          <div class="about-body reveal-item" style="--d:0.2s">
+            <p>
+              I'm a full stack developer with experience across the entire web stack —
+              from designing component systems in React and Next.js to building robust 
+              APIs with Node.js, Laravel, and PHP 8. I write code that's readable, 
+              maintainable, and built to scale.
+            </p>
+            <p>
+              I've worked on e-commerce platforms, AI-powered applications, and 
+              client-facing websites. I care about the architecture as much as the 
+              interface — because both matter when a product grows.
+            </p>
+            <p>
+              Currently available for freelance projects and full-time opportunities.
+            </p>
+          </div>
 
-				<br><br><br>
-				<section class="projects">
-					<article class="project">
-						<a href="https://lapepa1980.com" target="_blank" rel="noreferrer" class="project-img">
-							<img src="./assets/lapepa.png" alt="La Pepa screenshot" title="La Pepa" />
+          <div class="about-stats reveal-item" style="--d:0.3s" aria-label="Quick stats">
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-desc">Years building</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">10+</span>
+              <span class="stat-desc">Projects shipped</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">∞</span>
+              <span class="stat-desc">Coffees consumed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						</a>
-						<div>
-							<h3>03</h3>
-							<h2>La Pepa</h2>
-							<p>
-								A bespoke web platform for a musical group, featuring a digital historical archive and a
-								dynamic repertoire showcase. I engineered custom modules for contact management and
-								member
-								recruitment, streamlining the band's administrative and audition workflows.
-							</p>
-							<ul class="tech-stack">
-								<li>HTML5</li>
-								<li>CSS</li>
-								<li>JavaScript</li>
+    <!-- ===== STACK ===== -->
+    <section class="stack" id="stack" aria-labelledby="stack-heading">
+      <div class="stack-inner">
+        <header class="stack-header">
+          <p class="section-label reveal-item" style="--d:0s">02 — Stack</p>
+          <h2 class="section-title reveal-item" id="stack-heading" style="--d:0.1s">Tools I work with</h2>
+          <p class="stack-sub reveal-item" style="--d:0.2s">
+            Not a collector of technologies — a practitioner of the ones that matter.
+          </p>
+        </header>
 
-							</ul>
-							<ul class="project-links">
-								<li>
-									<a href="https://lapepa1980.com" target="_blank" rel="noreferrer"
-										class="hover-effect">Visit Site →</a>
-								</li>
-							</ul>
-						</div>
-					</article>
-				</section>
-		</section>
-		</div>
-		</section>
+        <div class="stack-body reveal-item" style="--d:0.3s">
+          <div class="stack-tabs" role="tablist" aria-label="Technology categories">
+            <button class="stab active" role="tab" aria-selected="true"  data-tab="frontend"  id="tab-fe"  aria-controls="panel-fe">Front-end</button>
+            <button class="stab"        role="tab" aria-selected="false" data-tab="backend"   id="tab-be"  aria-controls="panel-be">Back-end</button>
+            <button class="stab"        role="tab" aria-selected="false" data-tab="databases" id="tab-db"  aria-controls="panel-db">Databases</button>
+            <button class="stab"        role="tab" aria-selected="false" data-tab="tools"     id="tab-tl"  aria-controls="panel-tl">Tools</button>
+          </div>
 
+          <div class="stack-panels">
+            <div class="stack-panel active" id="panel-fe" role="tabpanel" aria-labelledby="tab-fe">
+              <ul class="tech-tags">
+                <li>HTML5</li><li>CSS3</li><li>SASS</li>
+                <li>JavaScript</li><li>TypeScript</li>
+                <li>React.js</li><li>Next.js</li>
+                <li>Angular</li><li>Bootstrap</li>
+              </ul>
+            </div>
 
+            <div class="stack-panel" id="panel-be" role="tabpanel" aria-labelledby="tab-be" hidden>
+              <ul class="tech-tags">
+                <li>PHP 8</li><li>Laravel</li>
+                <li>Node.js</li><li>Express</li>
+                <li>Java</li><li>Python</li>
+              </ul>
+            </div>
 
-		<!-- contact section -->
-		<section class="contact" data-aos="fade-up">
-			<div class="container">
-				<p class="subtitle">Have a project? or just looking to hire?</p>
-				<h2 class="title">Let's Work Together</h2>
-				<p class="info">
-					Feel free to reach out if you're looking to hire, just want to
-					connect or see if we can build something amazing together.
-				</p>
+            <div class="stack-panel" id="panel-db" role="tabpanel" aria-labelledby="tab-db" hidden>
+              <ul class="tech-tags">
+                <li>MySQL</li><li>MongoDB</li>
+              </ul>
+            </div>
 
-				<div>
-					<a href="mailto:jmgg200512@gmail.com" class="mail-link hover-effect">Get in touch →</a>
-					<!-- <small>(or copy) samwill300@gmail.com</small> -->
-				</div>
-			</div>
-		</section>
-	</main>
+            <div class="stack-panel" id="panel-tl" role="tabpanel" aria-labelledby="tab-tl" hidden>
+              <ul class="tech-tags">
+                <li>Git</li><li>GitHub</li><li>Figma</li>
+                <li>WordPress</li><li>SFCC</li><li>Adobe XD</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<footer class="footer" id="contact">
-		<div class="container">
-			<p>&copy; <span id="date"></span> Jose Maria</p>
-			<div>
-				<ul>
-					<li>
-						<a href="https://github.com/josema-2005" rel="noreferrer" target="_blank"
-							class="hover-effect">github</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/jose-maria-guerrero-g%C3%A1mez-034ab2345/" rel="noreferrer"
-							target="_blank" class="hover-effect">linkedin</a>
-					</li>
-				</ul>
-				<a href="#top" class="top">
-					<p class="scroll">scroll <span>to top</span></p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-						style="fill: currentColor">
-						<title>scroll to top</title>
-						<path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"></path>
-						<path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"></path>
-					</svg>
-				</a>
-			</div>
-		</div>
-	</footer>
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects" id="projects" aria-labelledby="projects-heading">
+      <div class="projects-intro">
+        <p class="section-label reveal-item" style="--d:0s">03 — Projects</p>
+        <h2 class="section-title reveal-item" id="projects-heading" style="--d:0.1s">Things I've built</h2>
+      </div>
+
+      <!-- Project 01: Mundo Animal -->
+      <article class="project-card" data-project="01">
+        <div class="project-media reveal-item" style="--d:0s">
+          <a href="https://github.com/josema-2005/tfg-josemaria" target="_blank" rel="noreferrer noopener"
+             class="project-img-link" tabindex="-1" aria-hidden="true">
+            <figure class="project-figure">
+              <img src="./assets/mundoanimal1.PNG" alt="Mundo Animal — pet e-commerce platform screenshot" loading="lazy" />
+              <figcaption class="project-hover-cta" aria-hidden="true">View on GitHub →</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="project-info reveal-item" style="--d:0.1s">
+          <div class="project-meta">
+            <span class="project-num mono">01</span>
+            <div class="project-tags" aria-label="Project type">
+              <span class="tag">Full Stack</span>
+              <span class="tag">Academic</span>
+            </div>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/josema-2005/tfg-josemaria" target="_blank" rel="noreferrer noopener">
+              Mundo Animal
+            </a>
+          </h3>
+          <p class="project-desc">
+            A complete web platform built as my Bachelor's Final Project. Combines 
+            an e-commerce for pet products, a blog, a veterinary appointment system, 
+            and full user authentication. Real complexity, real architecture — not a toy.
+          </p>
+          <ul class="project-stack" aria-label="Technologies">
+            <li>Laravel 10</li><li>PHP 8</li><li>MySQL</li>
+            <li>Blade</li><li>CSS3</li><li>Vanilla JS</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://github.com/josema-2005/tfg-josemaria" target="_blank" rel="noreferrer noopener" class="project-action-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></svg>
+              Source code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 02: Legal Analyzer -->
+      <article class="project-card project-card--alt" data-project="02">
+        <div class="project-media reveal-item" style="--d:0s">
+          <a href="https://github.com/josema-2005/analizador-juridico-ia" target="_blank" rel="noreferrer noopener"
+             class="project-img-link" tabindex="-1" aria-hidden="true">
+            <figure class="project-figure">
+              <img src="./assets/analizador-juridico.PNG" alt="Legal Document Analyzer — AI-powered PDF analysis app" loading="lazy" />
+              <figcaption class="project-hover-cta" aria-hidden="true">View on GitHub →</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="project-info reveal-item" style="--d:0.1s">
+          <div class="project-meta">
+            <span class="project-num mono">02</span>
+            <div class="project-tags" aria-label="Project type">
+              <span class="tag">AI</span>
+              <span class="tag">Full Stack</span>
+            </div>
+          </div>
+          <h3 class="project-title">
+            <a href="https://github.com/josema-2005/analizador-juridico-ia" target="_blank" rel="noreferrer noopener">
+              Legal Document<br>Analyzer
+            </a>
+          </h3>
+          <p class="project-desc">
+            Upload a legal or administrative PDF and receive a clear, plain-language 
+            explanation powered by AI. Built to help individuals and small businesses 
+            navigate complex documents — without needing a lawyer for every step.
+          </p>
+          <ul class="project-stack" aria-label="Technologies">
+            <li>React + Vite</li><li>Node.js</li><li>Express</li>
+            <li>OpenRouter API</li><li>pdf-parse</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://github.com/josema-2005/analizador-juridico-ia" target="_blank" rel="noreferrer noopener" class="project-action-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></svg>
+              Source code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 03: La Pepa -->
+      <article class="project-card" data-project="03">
+        <div class="project-media reveal-item" style="--d:0s">
+          <a href="https://lapepa1980.com" target="_blank" rel="noreferrer noopener"
+             class="project-img-link" tabindex="-1" aria-hidden="true">
+            <figure class="project-figure">
+              <img src="./assets/lapepa.png" alt="La Pepa — website for a musical group" loading="lazy" />
+              <figcaption class="project-hover-cta" aria-hidden="true">Visit site →</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="project-info reveal-item" style="--d:0.1s">
+          <div class="project-meta">
+            <span class="project-num mono">03</span>
+            <div class="project-tags" aria-label="Project type">
+              <span class="tag">Client work</span>
+              <span class="tag">Front-end</span>
+            </div>
+          </div>
+          <h3 class="project-title">
+            <a href="https://lapepa1980.com" target="_blank" rel="noreferrer noopener">
+              La Pepa
+            </a>
+          </h3>
+          <p class="project-desc">
+            A bespoke platform for a musical group — digital archive, repertoire 
+            showcase, and custom modules for contact management and member recruitment. 
+            Built to make the band's administrative workflows run smoothly.
+          </p>
+          <ul class="project-stack" aria-label="Technologies">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://lapepa1980.com" target="_blank" rel="noreferrer noopener" class="project-action-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Visit site
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <!-- Decorative arc -->
+      <div class="contact-arc" aria-hidden="true">
+        <svg viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M0 300 Q300 0 600 300" stroke="currentColor" stroke-width="1" fill="none" opacity="0.15"/>
+          <path d="M50 300 Q300 30 550 300" stroke="currentColor" stroke-width="0.5" fill="none" opacity="0.1"/>
+        </svg>
+      </div>
+
+      <div class="contact-inner">
+        <p class="section-label reveal-item" style="--d:0s">04 — Contact</p>
+        <h2 class="contact-title reveal-item" id="contact-heading" style="--d:0.1s">
+          Have a project?<br>
+          <em>Let's build it.</em>
+        </h2>
+        <p class="contact-sub reveal-item" style="--d:0.2s">
+          Looking for a developer who can own a feature end-to-end, ship fast, 
+          and write code your team won't dread maintaining? Let's talk.
+        </p>
+        <a href="mailto:contacto@josemariadevs.com" class="contact-email reveal-item" style="--d:0.3s">
+          <span>contacto@josemariadevs.com</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        &copy; <span id="year"></span> José María Guerrero Gámez
+        <span class="footer-made" aria-hidden="true"></span>
+      </p>
+      <div class="footer-links">
+        <a href="https://github.com/josema-2005" target="_blank" rel="noreferrer noopener" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/jose-maria-guerrero-g%C3%A1mez-034ab2345/" target="_blank" rel="noreferrer noopener" class="footer-link">LinkedIn</a>
+        <a href="#top" class="footer-link footer-top" aria-label="Back to top">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m6.293 11.293 1.414 1.414L12 8.414l4.293 4.293 1.414-1.414L12 5.586z"/><path d="m6.293 16.293 1.414 1.414L12 13.414l4.293 4.293 1.414-1.414L12 10.586z"/></svg>
+          Top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
 </body>
-
 </html>
